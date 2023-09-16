@@ -42,7 +42,7 @@ if res.post_e_ingest_events_v2_200_application_json_object is not None:
 ## Available Resources and Operations
 
 
-### [default](docs/sdks/default/README.md)
+### [Default](docs/sdks/default/README.md)
 
 * [post_e_ingest_events_v2](docs/sdks/default/README.md#post_e_ingest_events_v2) - Ingestion V2
 <!-- End SDK Available Operations -->
