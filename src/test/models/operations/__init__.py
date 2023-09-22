@@ -2,4 +2,4 @@
 
 from .post_e_ingest_events_v2 import *
 
-__all__ = ["PostEIngestEventsV2200ApplicationJSON","PostEIngestEventsV2Request","PostEIngestEventsV2RequestBody","PostEIngestEventsV2Response","PostEIngestEventsV2Security"]
+__all__ = ["PostEIngestEventsV2200ApplicationJSON","PostEIngestEventsV2Request","PostEIngestEventsV2RequestBody","PostEIngestEventsV2Response"]

@@ -16,22 +16,22 @@ pip install git+https://github.com/speakeasy-sdks/drdroid-py.git
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```python
 import test
-from test.models import operations
+from test.models import operations, shared
 
-s = test.Test()
+s = test.Test(
+    security=shared.Security(
+        bearer_auth="",
+    ),
+)
 
 req = operations.PostEIngestEventsV2Request(
     request_body=operations.PostEIngestEventsV2RequestBody(),
-    x_request_org='corrupti',
+    x_request_org='provident',
 )
 
-res = s.default.post_e_ingest_events_v2(req, operations.PostEIngestEventsV2Security(
-    bearer_auth="",
-))
+res = s.default.post_e_ingest_events_v2(req)
 
 if res.post_e_ingest_events_v2_200_application_json_object is not None:
     # handle response
@@ -46,6 +46,32 @@ if res.post_e_ingest_events_v2_200_application_json_object is not None:
 
 * [post_e_ingest_events_v2](docs/sdks/default/README.md#post_e_ingest_events_v2) - Ingestion V2
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `Next` method that can be called to pull down the next group of results. If the
+return value of `Next` is `None`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 

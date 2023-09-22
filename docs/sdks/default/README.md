@@ -12,18 +12,20 @@ Ingestion V2
 
 ```python
 import test
-from test.models import operations
+from test.models import operations, shared
 
-s = test.Test()
+s = test.Test(
+    security=shared.Security(
+        bearer_auth="",
+    ),
+)
 
 req = operations.PostEIngestEventsV2Request(
     request_body=operations.PostEIngestEventsV2RequestBody(),
-    x_request_org='provident',
+    x_request_org='distinctio',
 )
 
-res = s.default.post_e_ingest_events_v2(req, operations.PostEIngestEventsV2Security(
-    bearer_auth="",
-))
+res = s.default.post_e_ingest_events_v2(req)
 
 if res.post_e_ingest_events_v2_200_application_json_object is not None:
     # handle response
@@ -31,10 +33,9 @@ if res.post_e_ingest_events_v2_200_application_json_object is not None:
 
 ### Parameters
 
-| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `request`                                                                                        | [operations.PostEIngestEventsV2Request](../../models/operations/posteingesteventsv2request.md)   | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
-| `security`                                                                                       | [operations.PostEIngestEventsV2Security](../../models/operations/posteingesteventsv2security.md) | :heavy_check_mark:                                                                               | The security requirements to use for the request.                                                |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `request`                                                                                      | [operations.PostEIngestEventsV2Request](../../models/operations/posteingesteventsv2request.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
 
 
 ### Response

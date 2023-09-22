@@ -8,14 +8,6 @@ from typing import Optional
 
 
 @dataclasses.dataclass
-class PostEIngestEventsV2Security:
-    bearer_auth: str = dataclasses.field(metadata={'security': { 'scheme': True, 'type': 'http', 'sub_type': 'bearer', 'field_name': 'Authorization' }})
-    
-
-
-
-
-@dataclasses.dataclass
 class PostEIngestEventsV2RequestBody:
     pass
 
