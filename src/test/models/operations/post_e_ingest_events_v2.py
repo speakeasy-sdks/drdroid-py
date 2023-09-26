@@ -33,10 +33,13 @@ class PostEIngestEventsV2200ApplicationJSON:
 @dataclasses.dataclass
 class PostEIngestEventsV2Response:
     content_type: str = dataclasses.field()
+    r"""HTTP response content type for this operation"""
     status_code: int = dataclasses.field()
+    r"""HTTP response status code for this operation"""
     headers: Optional[dict[str, list[str]]] = dataclasses.field(default=None)
     post_e_ingest_events_v2_200_application_json_object: Optional[PostEIngestEventsV2200ApplicationJSON] = dataclasses.field(default=None)
     r"""OK"""
     raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
+    r"""Raw HTTP response; suitable for custom response parsing"""
     
 
