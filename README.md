@@ -28,7 +28,7 @@ s = test.Test(
 
 req = operations.PostEIngestEventsV2Request(
     request_body=operations.PostEIngestEventsV2RequestBody(),
-    x_request_org='provident',
+    x_request_org='Reggae eek application',
 )
 
 res = s.default.post_e_ingest_events_v2(req)
