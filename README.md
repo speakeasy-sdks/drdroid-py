@@ -34,6 +34,7 @@ res = s.default.post_e_ingest_events_v2(req)
 
 if res.post_e_ingest_events_v2_200_application_json_object is not None:
     # handle response
+    pass
 ```
 <!-- End SDK Example Usage -->
 
