@@ -3,14 +3,12 @@
 from __future__ import annotations
 import dataclasses
 import requests as requests_http
-from typing import Optional
-
+from typing import Dict, List, Optional
 
 
 @dataclasses.dataclass
 class PostEIngestEventsV2RequestBody:
     pass
-
 
 
 @dataclasses.dataclass
@@ -21,12 +19,10 @@ class PostEIngestEventsV2Request:
 
 
 
-
 @dataclasses.dataclass
 class PostEIngestEventsV2200ApplicationJSON:
     r"""OK"""
     
-
 
 
 
@@ -36,7 +32,7 @@ class PostEIngestEventsV2Response:
     r"""HTTP response content type for this operation"""
     status_code: int = dataclasses.field()
     r"""HTTP response status code for this operation"""
-    headers: Optional[dict[str, list[str]]] = dataclasses.field(default=None)
+    headers: Optional[Dict[str, List[str]]] = dataclasses.field(default=None)
     post_e_ingest_events_v2_200_application_json_object: Optional[PostEIngestEventsV2200ApplicationJSON] = dataclasses.field(default=None)
     r"""OK"""
     raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
