@@ -1,4 +1,4 @@
-# PostEIngestEventsV2200ApplicationJSON
+# PostEIngestEventsV2ResponseBody
 
 OK
 

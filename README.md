@@ -32,7 +32,7 @@ req = operations.PostEIngestEventsV2Request(
 
 res = s.default.post_e_ingest_events_v2(req)
 
-if res.post_e_ingest_events_v2_200_application_json_object is not None:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -42,7 +42,7 @@ if res.post_e_ingest_events_v2_200_application_json_object is not None:
 ## Available Resources and Operations
 
 
-### [default](docs/sdks/default/README.md)
+### [.default](docs/sdks/default/README.md)
 
 * [post_e_ingest_events_v2](docs/sdks/default/README.md#post_e_ingest_events_v2) - Ingestion V2
 <!-- End SDK Available Operations -->
@@ -71,8 +71,6 @@ Here's an example of one such pagination call:
 # Error Handling
 
 Handling errors in your SDK should largely match your expectations.  All operations return a response object or raise an error.  If Error objects are specified in your OpenAPI Spec, the SDK will raise the appropriate Error type.
-
-
 <!-- End Error Handling -->
 
 
@@ -90,16 +88,15 @@ You can override the default server globally by passing a server index to the `s
 
 For example:
 
-
 ```python
 import test
 from test.models import operations, shared
 
 s = test.Test(
+    server_idx=0,
     security=shared.Security(
         bearer_auth="",
     ),
-    server_idx=0
 )
 
 req = operations.PostEIngestEventsV2Request(
@@ -108,7 +105,7 @@ req = operations.PostEIngestEventsV2Request(
 
 res = s.default.post_e_ingest_events_v2(req)
 
-if res.post_e_ingest_events_v2_200_application_json_object is not None:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -118,16 +115,15 @@ if res.post_e_ingest_events_v2_200_application_json_object is not None:
 
 The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
 
-
 ```python
 import test
 from test.models import operations, shared
 
 s = test.Test(
+    server_url="http://{{endpoint}}",
     security=shared.Security(
         bearer_auth="",
     ),
-    server_url="http://{{endpoint}}"
 )
 
 req = operations.PostEIngestEventsV2Request(
@@ -136,7 +132,7 @@ req = operations.PostEIngestEventsV2Request(
 
 res = s.default.post_e_ingest_events_v2(req)
 
-if res.post_e_ingest_events_v2_200_application_json_object is not None:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -160,9 +156,45 @@ http_client = requests.Session()
 http_client.headers.update({'x-custom-header': 'someValue'})
 s = test.Test(client: http_client)
 ```
-
-
 <!-- End Custom HTTP Client -->
+
+
+
+<!-- Start Authentication -->
+
+# Authentication
+
+## Per-Client Security Schemes
+
+Your SDK supports the following security scheme globally:
+
+| Name          | Type          | Scheme        |
+| ------------- | ------------- | ------------- |
+| `bearer_auth` | http          | HTTP Bearer   |
+
+You can set the security parameters through the `security` optional parameter when initializing the SDK client instance. For example:
+
+```python
+import test
+from test.models import operations, shared
+
+s = test.Test(
+    security=shared.Security(
+        bearer_auth="",
+    ),
+)
+
+req = operations.PostEIngestEventsV2Request(
+    request_body=operations.PostEIngestEventsV2RequestBody(),
+)
+
+res = s.default.post_e_ingest_events_v2(req)
+
+if res.object is not None:
+    # handle response
+    pass
+```
+<!-- End Authentication -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 

@@ -20,7 +20,7 @@ class PostEIngestEventsV2Request:
 
 
 @dataclasses.dataclass
-class PostEIngestEventsV2200ApplicationJSON:
+class PostEIngestEventsV2ResponseBody:
     r"""OK"""
     
 
@@ -33,7 +33,7 @@ class PostEIngestEventsV2Response:
     status_code: int = dataclasses.field()
     r"""HTTP response status code for this operation"""
     headers: Optional[Dict[str, List[str]]] = dataclasses.field(default=None)
-    post_e_ingest_events_v2_200_application_json_object: Optional[PostEIngestEventsV2200ApplicationJSON] = dataclasses.field(default=None)
+    object: Optional[PostEIngestEventsV2ResponseBody] = dataclasses.field(default=None)
     r"""OK"""
     raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
     r"""Raw HTTP response; suitable for custom response parsing"""
