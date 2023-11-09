@@ -1,5 +1,5 @@
 # Default
-(*.default*)
+(*default*)
 
 ### Available Operations
 
@@ -42,4 +42,8 @@ if res.object is not None:
 ### Response
 
 **[operations.PostEIngestEventsV2Response](../../models/operations/posteingesteventsv2response.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
