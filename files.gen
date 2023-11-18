@@ -8,6 +8,7 @@ src/test/utils/__init__.py
 src/test/utils/retries.py
 src/test/utils/utils.py
 src/test/models/errors/sdkerror.py
+tests/helpers.py
 src/test/models/operations/post_e_ingest_events_v2.py
 src/test/models/shared/security.py
 src/test/models/__init__.py
