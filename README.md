@@ -25,7 +25,7 @@ from test.models import operations, shared
 
 s = test.Test(
     security=shared.Security(
-        bearer_auth="",
+        bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
     ),
 )
 
@@ -72,7 +72,7 @@ from test.models import operations, shared
 
 s = test.Test(
     security=shared.Security(
-        bearer_auth="",
+        bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
     ),
 )
 
@@ -115,7 +115,7 @@ from test.models import operations, shared
 s = test.Test(
     server_idx=0,
     security=shared.Security(
-        bearer_auth="",
+        bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
     ),
 )
 
@@ -141,7 +141,7 @@ from test.models import operations, shared
 s = test.Test(
     server_url="http://{{endpoint}}",
     security=shared.Security(
-        bearer_auth="",
+        bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
     ),
 )
 
@@ -195,7 +195,7 @@ from test.models import operations, shared
 
 s = test.Test(
     security=shared.Security(
-        bearer_auth="",
+        bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
     ),
 )
 

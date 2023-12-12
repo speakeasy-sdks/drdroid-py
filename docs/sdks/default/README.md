@@ -17,7 +17,7 @@ from test.models import operations, shared
 
 s = test.Test(
     security=shared.Security(
-        bearer_auth="",
+        bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
     ),
 )
 
