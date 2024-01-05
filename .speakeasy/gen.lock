@@ -1,0 +1,44 @@
+lockVersion: 2.0.0
+id: fec3b77e-e44f-4c88-abc6-e8f065595d6d
+management:
+  docChecksum: 5c8e91f02fadabe400d948ca7c158722
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 0.11.1
+  configChecksum: f935e869718a2c9e22609e88e3a3af5c
+  repoURL: https://github.com/speakeasy-sdks/drdroid-py.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/drdroid-py.git
+features:
+  python:
+    core: 4.4.0
+    globalSecurity: 2.83.1
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - src/test/sdkconfiguration.py
+  - src/test/default.py
+  - src/test/sdk.py
+  - pylintrc
+  - setup.py
+  - src/test/__init__.py
+  - src/test/utils/__init__.py
+  - src/test/utils/retries.py
+  - src/test/utils/utils.py
+  - src/test/models/errors/sdkerror.py
+  - tests/helpers.py
+  - src/test/models/operations/post_e_ingest_events_v2.py
+  - src/test/models/shared/security.py
+  - src/test/models/__init__.py
+  - src/test/models/errors/__init__.py
+  - src/test/models/operations/__init__.py
+  - src/test/models/shared/__init__.py
+  - docs/models/operations/posteingesteventsv2requestbody.md
+  - docs/models/operations/posteingesteventsv2request.md
+  - docs/models/operations/posteingesteventsv2responsebody.md
+  - docs/models/operations/posteingesteventsv2response.md
+  - docs/models/shared/security.md
+  - docs/sdks/test/README.md
+  - docs/sdks/default/README.md
+  - USAGE.md
+  - .gitattributes
