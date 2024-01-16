@@ -4,7 +4,7 @@ management:
   docChecksum: 5c8e91f02fadabe400d948ca7c158722
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.228.1
+  generationVersion: 2.233.2
   releaseVersion: 0.11.2
   configChecksum: e4e98768f4371aa2bc7166f7f08bfbf3
   repoURL: https://github.com/speakeasy-sdks/drdroid-py.git
