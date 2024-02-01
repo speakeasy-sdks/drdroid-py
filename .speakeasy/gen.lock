@@ -4,15 +4,15 @@ management:
   docChecksum: 5c8e91f02fadabe400d948ca7c158722
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.237.2
-  releaseVersion: 0.11.3
-  configChecksum: 7208ffd3ee73d3df16b562739e4a9b4f
+  generationVersion: 2.245.1
+  releaseVersion: 0.11.4
+  configChecksum: a22a64f261dd6652397a4a781dd30dd9
   repoURL: https://github.com/speakeasy-sdks/drdroid-py.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/drdroid-py.git
 features:
   python:
-    core: 4.4.2
+    core: 4.4.3
     globalSecurity: 2.83.2
     globalServerURLs: 2.82.1
 generatedFiles:
